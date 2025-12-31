@@ -11,16 +11,27 @@ This project demonstrates an end-to-end machine learning workflow, including dat
 - Deployment: Docker container
 
 ## Project Structure
+
 customer-churn-e2e/
-├── data/ # Raw dataset
+├── data/
+│   └── raw/
+│       └── Telco-Customer-Churn.csv
 ├── src/
-│ ├── data/ # Preprocessing scripts
-│ ├── models/ # Training scripts
-│ └── api/ # FastAPI app
-├── artifacts/ # Preprocessed data, trained model, pipeline
+│   ├── data/
+│   │   └── preprocess.py
+│   ├── models/
+│   │   └── train.py
+│   └── api/
+│       └── app.py
+├── artifacts/
+│   ├── pipeline.joblib
+│   ├── logistic_model.joblib
+│   ├── train_data.npz
+│   └── test_data.npz
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+
 
 
 ## How to Run Locally
