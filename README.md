@@ -11,26 +11,9 @@ This project demonstrates an end-to-end machine learning workflow, including dat
 - Deployment: Docker container
 
 ## Project Structure
+📷 Project Structure:
+![Project Structure](folder_struct.png)
 
-customer-churn-e2e/
-├── data/
-│   └── raw/
-│       └── Telco-Customer-Churn.csv
-├── src/
-│   ├── data/
-│   │   └── preprocess.py
-│   ├── models/
-│   │   └── train.py
-│   └── api/
-│       └── app.py
-├── artifacts/
-│   ├── pipeline.joblib
-│   ├── logistic_model.joblib
-│   ├── train_data.npz
-│   └── test_data.npz
-├── Dockerfile
-├── requirements.txt
-└── README.md
 
 
 
@@ -59,6 +42,8 @@ uvicorn src.api.app:app --reload
 ```
 API access for test: http://127.0.0.1:8000/docs
 ```
+📷 api UI:
+![api UI](api UI.png)
 sample to test : 
 {
   "gender": "Female",
