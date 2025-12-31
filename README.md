@@ -12,7 +12,7 @@ This project demonstrates an end-to-end machine learning workflow, including dat
 
 ## Project Structure
 📷 Project Structure:
-![Project Structure](folder_struct.png)
+![Project Structure](output_imgs/folder_struct.png)
 
 
 
@@ -43,7 +43,9 @@ uvicorn src.api.app:app --reload
 API access for test: http://127.0.0.1:8000/docs
 ```
 📷 api UI:
-![api UI](api UI.png)
+![api UI](output_imgs/api_ui.png)
+
+
 sample to test : 
 {
   "gender": "Female",
